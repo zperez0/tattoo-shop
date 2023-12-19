@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Cross as Hamburger } from 'hamburger-react'
+import { Cross as Hamburger } from "hamburger-react";
 import "./NavBar.css";
+import { Link } from "react-router-dom";
+
+// to do:
+// mobile menu - when item is clicked either A. have navbar close or B. shrink the size of open menu.
+// allowing the user to see the contents of the page.
 
 function NavBar() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -12,7 +17,7 @@ function NavBar() {
     setOpenMenu(!openMenu);
   }
 
-  // track window resize and update screenWidth state
+  // track window resize & update screenWidth state
   useEffect(() => {
     // updates screenWidth state on window resize
     function changeWidth() {
@@ -30,26 +35,28 @@ function NavBar() {
   }, []);
 
   return (
-    <nav className="navbar">
-      {/* render menu if openMenu is true or screenWidth is greater than 500 */}
+    <div className="topnav" id="myTopnav">
+      <p>endless</p>
+
       {(openMenu || screenWidth > 500) && (
-        <ul className="list">
-          <li className="items">About</li>
-          <li className="items">Artists</li>
-          <li className="items">Contact</li>
-        </ul>
+        <div className="split">
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/artists">Artists</Link>
+          <Link to="/contact">Contact</Link>
+        </div>
       )}
 
-<div className="btn" onClick={openNav}>
+      <div className="btn" onClick={openNav}>
         <Hamburger
           toggled={openMenu}
           toggle={setOpenMenu}
           size={24}
-          color="#000"
+          color="#f5f5f5"
           label="Show menu"
         />
       </div>
-    </nav>
+    </div>
   );
 }
 
