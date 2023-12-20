@@ -3,17 +3,16 @@
   border-radius: 12px;
   border: 2px solid #ffa600;
   color: #f2f2f2;
-  padding: 15px 32px;
+  padding: 5px 30px;
   text-align: center;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
-  display: block;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
-  position: absolute;
-  top: 70%;
-  left: 15%;
+  margin: 10px auto;
+  display: block;
+  width: fit-content;
 }
 
 .animated-button.hovered {
@@ -24,14 +23,10 @@
   color: black;
 }
 
-
 /* media query for smaller screens */
 @media screen and (max-width: 540px) {
-  /* .animated-button {
-    padding: 10px 20px; 
-    font-size: 14px; 
-    top: 440px; 
-  } */
+  .animated-button {
+    width: 80%;
+    margin: 10px auto;
+  }
 }
-
-
