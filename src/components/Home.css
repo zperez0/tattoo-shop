@@ -1,0 +1,79 @@
+.background {
+  background-color: #2b2b2b;
+  height: 100vh;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  max-width: 500px;
+  position: relative;
+}
+
+/* sticky icons */
+
+/* vertical icon bar*/
+.iconBar {
+  position: fixed;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* icons */
+.facebook,
+.twitter,
+.instagram,
+.linkedin,
+.youtube {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: #f2f2f2;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* icon bar hover */
+.facebook:hover,
+.twitter:hover,
+.instagram:hover,
+.linkedin:hover,
+.youtube:hover {
+  background-color: #ffa600;
+  color: black;
+}
+
+.facebook,
+.twitter,
+.instagram,
+.linkedin,
+.youtube {
+  color: #f2f2f2;
+}
+
+/* media query for smaller screens */
+@media screen and (max-width: 540px) {
+  .logo {
+    width: 100%;
+    top: 100px;
+  }
+  .iconBar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 541px) and (max-width: 912px) {
+  .logo {
+    width: 100%;
+    max-width: 450px;
+    top: 50px;
+  }
+  .iconBar {
+    top: 45%;
+  }
+}
