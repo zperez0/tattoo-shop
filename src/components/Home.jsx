@@ -7,7 +7,7 @@ import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 
 function Home() {
   return (
-    <div className="background">
+    <div className="home">
       {/*social media icon bar*/}
       <div className="iconBar">
         <FaXTwitter className="twitter" />
