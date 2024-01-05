@@ -6,7 +6,6 @@ import artist2 from "../img/artist2.jpg";
 import artist3 from "../img/artist3.jpg";
 
 // to do:
-// fix white gab
 // adjust media query
 
 function Artists() {

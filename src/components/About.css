@@ -12,6 +12,7 @@
   border-bottom: 2px solid orange;
   width: 200px;
 }
+
 .location {
   margin-bottom: 10px;
   border-bottom: 2px solid orange;
@@ -26,7 +27,10 @@
 
 .shop {
   border-radius: 50%;
-  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
 }
 
 /* for image and text */
@@ -37,7 +41,7 @@
 .column {
   flex: 33.33%;
   padding: 5px;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 
 @media screen and (max-width: 500px) {
